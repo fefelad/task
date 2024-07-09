@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./scss/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__title">
+                <h1>Google Keep by fefelad</h1>
+            </div>
+            <form action="" class="form" id="addNoteForm">
+
+                <div class="form__start shadow p-3 mb-5 bg-body-tertiary rounded">
+                    Заметочка ваша...
+                </div>
+
+                <div class="form__content shadow p-3 mb-5 bg-body-tertiary rounded" hidden="true">
+                    <input class="form__title" type="text" placeholder="Название заметки" id="noteTitleInput">
+                    <div class="form__text" id="noteTextInput" contenteditable="true">Текст заметки</div>
+                    <button class="btn btn-primary">Добавить заметку</button>
+                </div>
+
+
+
+            </form>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="main__cards-wrapper hidden" id="CardWrapper">
+            </div>
+        </div>
+    </main>
+
+
+    <script src="./js/main.js"> </script>
+</body>
+</html> 
